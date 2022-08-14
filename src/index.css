@@ -1,5 +1,5 @@
 /* Custom Fonts */
-@font-face {
+/* @font-face {
   font-family: Centra;
   src: url('./assets//font/CentraNo2-Bold.ttf');
   font-weight: 700;
@@ -15,7 +15,7 @@
   font-family: Centra;
   src: url('./assets//font/CentraNo2-Book.ttf');
   font-weight: 400;
-}
+} */
 
 /*CSS Resets */
 /* Box sizing rules */
@@ -56,7 +56,10 @@ body {
   line-height: 1.5;
   font-weight: 400;
   position: relative;
-  font-family: 'Centra', sans-serif;
+  font-size: 1rem;
+  color: #212529;
+  background-color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* A elements that don't have a class get default styles */
