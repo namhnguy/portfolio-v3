@@ -15,7 +15,12 @@ const Donut = () => {
       ]}
       centerContent
     >
-      <Box id='canvas-container' w='40rem' h='40rem'>
+      <Box
+        id='canvas-container'
+        boxSize={{ base: '30rem', md: '40rem' }}
+        marginTop={{ base: '-60px', md: '120px' }}
+        marginBottom={{ base: '-140px', md: '-200px' }}
+      >
         <Canvas>
           <ambientLight intensity={0.5} />
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />

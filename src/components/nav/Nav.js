@@ -18,7 +18,7 @@ const Nav = () => {
       pos='fixed'
       w='100%'
       zIndex={2}
-      backgroundColor={useColorModeValue('#e9d5a1', '#20202380')}
+      backgroundColor={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
     >
       <Container
