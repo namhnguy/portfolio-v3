@@ -24,12 +24,12 @@ const ExperienceTimeline = () => {
         <h3>Front-End Developer Intern</h3>
         <h4>Codubee</h4>
         <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
+          Developed a movie recommendation web application that lets user search
+          for popular movies based on their criteria.
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date='01.2021 - 05.2021'
+        date='05.2021 - 08.2021'
         contentStyle={{
           background: useColorModeValue(
             'rgba(255,255,255,0.36)',
@@ -39,15 +39,15 @@ const ExperienceTimeline = () => {
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={<HamburgerIcon />}
       >
-        <h3>Game Developer</h3>
+        <h3>Game Developer Intern</h3>
         <h4>XR Sports Group</h4>
         <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
+          Worked in an agile environment to make a web based golf game for an
+          influencer group.
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date='01.2021 - 05.2021'
+        date='08.2021 - 06.2022'
         contentStyle={{
           background: useColorModeValue(
             'rgba(255,255,255,0.36)',
@@ -60,12 +60,12 @@ const ExperienceTimeline = () => {
         <h3>Front-End Developer</h3>
         <h4>Antra</h4>
         <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
+          Worked in an agile environment to develop a component library for
+          developers to use in their React application.
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        date='01.2021 - 05.2021'
+        date='06.2022 - current'
         contentStyle={{
           background: useColorModeValue(
             'rgba(255,255,255,0.36)',
@@ -75,11 +75,11 @@ const ExperienceTimeline = () => {
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         icon={<HamburgerIcon />}
       >
-        <h3>Software Engineer</h3>
+        <h3>Software Engineer Associate</h3>
         <h4>Lockheed Martin</h4>
         <p>
-          Creative Direction, User Experience, Visual Design, Project
-          Management, Team Leading
+          As part of the Lockheed Martin, I work on exciting projects for our
+          users.
         </p>
       </VerticalTimelineElement>
     </VerticalTimeline>

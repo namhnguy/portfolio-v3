@@ -3,6 +3,7 @@ import { Box, useColorModeValue, Heading, Image } from '@chakra-ui/react';
 import ProfileImg from '../../assets/image/profile.jpg';
 import Typical from 'react-typical';
 import './AboutMeHeading.css';
+import MotionContainer from '../common/MotionContainer';
 
 const AboutMeHeading = () => {
   return (
@@ -20,9 +21,15 @@ const AboutMeHeading = () => {
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as='h2' size='xl'>
-            Nam Nguyen
-          </Heading>
+          <MotionContainer
+            initial={{ x: 100 }}
+            animate={{ x: 0 }}
+            transition={{ ease: 'easeOut', duration: 2 }}
+          >
+            <Heading as='h2' size='xl'>
+              Nam Nguyen
+            </Heading>
+          </MotionContainer>
           <Typical
             steps={['Web Developer, Game Developer, Blender Enthusist']}
             wrapper='p'

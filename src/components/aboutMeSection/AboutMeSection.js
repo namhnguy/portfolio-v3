@@ -6,6 +6,7 @@ import AboutMeCard from './AboutMeCard';
 const AboutMeSection = () => {
   return (
     <Container
+      id='about-section'
       as='section'
       maxW={[
         'container.sm',

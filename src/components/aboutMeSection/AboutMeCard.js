@@ -1,24 +1,32 @@
 import React from 'react';
 import { Box, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react';
 import { Icon } from '@iconify/react';
+import MotionContainer from '../common/MotionContainer';
 
 const AboutMeCard = () => {
   return (
     <>
-      <Heading
-        marginTop={3}
-        marginBottom={4}
-        as='h3'
-        fontSize='1.25rem'
-        fontWeight='bold'
-        lineHeight='1.33'
-        textDecor='underline'
-        textUnderlineOffset='0.375rem'
-        textDecorationColor='#525252'
-        textDecorationThickness='0.25rem'
+      <MotionContainer
+        whileHover={{
+          scale: 1.2,
+        }}
+        width='fit-content'
       >
-        About Me
-      </Heading>
+        <Heading
+          marginTop={3}
+          marginBottom={4}
+          as='h3'
+          fontSize='1.25rem'
+          fontWeight='bold'
+          lineHeight='1.33'
+          textDecor='underline'
+          textUnderlineOffset='0.375rem'
+          textDecorationColor='#525252'
+          textDecorationThickness='0.25rem'
+        >
+          About Me
+        </Heading>
+      </MotionContainer>
       <Flex
         flexDirection='column'
         minWidth='0'

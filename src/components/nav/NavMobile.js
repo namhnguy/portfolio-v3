@@ -22,16 +22,16 @@ const NavMobile = () => {
         <Link href='#' _hover={{ textDecor: 'none' }}>
           <MenuItem>Home</MenuItem>
         </Link>
-        <Link href='#' _hover={{ textDecor: 'none' }}>
+        <Link href='#about-section' _hover={{ textDecor: 'none' }}>
           <MenuItem>About Me</MenuItem>
         </Link>
-        <Link href='#' _hover={{ textDecor: 'none' }}>
+        <Link href='#exp-section' _hover={{ textDecor: 'none' }}>
           <MenuItem>Experience</MenuItem>
         </Link>
-        <Link href='#' _hover={{ textDecor: 'none' }}>
+        <Link href='#skill-section' _hover={{ textDecor: 'none' }}>
           <MenuItem>Skills</MenuItem>
         </Link>
-        <Link href='#' _hover={{ textDecor: 'none' }}>
+        <Link href='#project-section' _hover={{ textDecor: 'none' }}>
           <MenuItem>Projects</MenuItem>
         </Link>
       </MenuList>

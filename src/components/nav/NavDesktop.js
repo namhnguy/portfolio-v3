@@ -1,5 +1,6 @@
 import React from 'react';
 import { Stack, Link } from '@chakra-ui/react';
+import MotionContainer from '../common/MotionContainer';
 
 const NavDesktop = () => {
   return (
@@ -10,21 +11,31 @@ const NavDesktop = () => {
       alignItems='center'
       flexGrow={1}
     >
-      <Link p={2} href='#' _hover={{ textDecor: 'none' }}>
-        Home
-      </Link>
-      <Link p={2} href='#' _hover={{ textDecor: 'none' }}>
-        About Me
-      </Link>
-      <Link p={2} href='#' _hover={{ textDecor: 'none' }}>
-        Experience
-      </Link>
-      <Link p={2} href='#' _hover={{ textDecor: 'none' }}>
-        Skills
-      </Link>
-      <Link href='#' _hover={{ textDecor: 'none' }}>
-        Projects
-      </Link>
+      <MotionContainer whileTap={{ scale: 1.5 }} whileHover={{ scale: 1.2 }}>
+        <Link p={2} href='#' _hover={{ textDecor: 'none' }}>
+          Home
+        </Link>
+      </MotionContainer>
+      <MotionContainer whileTap={{ scale: 1.5 }} whileHover={{ scale: 1.2 }}>
+        <Link p={2} href='#about-section' _hover={{ textDecor: 'none' }}>
+          About Me
+        </Link>
+      </MotionContainer>
+      <MotionContainer whileTap={{ scale: 1.5 }} whileHover={{ scale: 1.2 }}>
+        <Link p={2} href='#exp-section' _hover={{ textDecor: 'none' }}>
+          Experience
+        </Link>
+      </MotionContainer>
+      <MotionContainer whileTap={{ scale: 1.5 }} whileHover={{ scale: 1.2 }}>
+        <Link p={2} href='#skill-section' _hover={{ textDecor: 'none' }}>
+          Skills
+        </Link>
+      </MotionContainer>
+      <MotionContainer whileTap={{ scale: 1.5 }} whileHover={{ scale: 1.2 }}>
+        <Link href='#project-section' _hover={{ textDecor: 'none' }}>
+          Projects
+        </Link>
+      </MotionContainer>
     </Stack>
   );
 };

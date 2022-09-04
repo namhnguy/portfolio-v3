@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container, Heading } from '@chakra-ui/react';
 import ExperienceTimeline from './ExperienceTimeline';
+import MotionContainer from '../common/MotionContainer';
 
 const ExperienceSection = () => {
   return (
     <Container
+      id='exp-section'
       as='section'
       maxW={[
         'container.sm',
@@ -14,20 +16,28 @@ const ExperienceSection = () => {
         'container.lg',
       ]}
     >
-      <Heading
-        marginTop={20}
-        marginBottom={4}
-        as='h3'
-        fontSize='1.25rem'
-        fontWeight='bold'
-        lineHeight='1.33'
-        textDecor='underline'
-        textUnderlineOffset='0.375rem'
-        textDecorationColor='#525252'
-        textDecorationThickness='0.25rem'
+      <MotionContainer
+        whileHover={{
+          scale: 1.2,
+        }}
+        width='fit-content'
       >
-        Experience
-      </Heading>
+        <Heading
+          marginTop={20}
+          marginBottom={4}
+          as='h3'
+          fontSize='1.25rem'
+          fontWeight='bold'
+          lineHeight='1.33'
+          textDecor='underline'
+          textUnderlineOffset='0.375rem'
+          textDecorationColor='#525252'
+          textDecorationThickness='0.25rem'
+        >
+          Experience
+        </Heading>
+      </MotionContainer>
+
       <ExperienceTimeline />
     </Container>
   );
