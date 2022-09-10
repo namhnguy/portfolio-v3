@@ -1,6 +1,7 @@
 {
   "name": "portfolio-v3",
   "version": "0.1.0",
+  "homepage": "https://namhnguy.github.io/portfolio-v3",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.8",
@@ -24,6 +25,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
